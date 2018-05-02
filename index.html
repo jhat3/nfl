@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<!--
+
+In this file, comments are used to identify different parts of the code by letter.
+The Sporclone Instructions file will refer to letters when describing the sequence of
+steps necessary to create a working Sporclone game. Complete the project according
+to the order of the NUMBERED instructions, not the order of the letters.
+
+DO NOT DELETE THE LETTER COMMENTS AFTER YOU COMPLETE STEPS!!!!!
+
+-->
+
+<html>
+<head>
+<!-- a. -->
+<title>Sporclone: NFL Players</title>
+
+<!-- b. -->
+<link rel="stylesheet" href="css/main.css">
+
+<!-- You may optionally style the table in your answers section here. -->
+<style>
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+table span {
+    /* applies only to span tags within table */
+    border: 1px solid #AAAAAA;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+}
+</style>
+
+<script>
+/*********** Game configuration ***********/
+
+// c.
+var answers = ["Aaron Rodgers | Rodgers", "Adrian Peterson | Peterson", "Andrew Luck | Luck", "Calvin Johnson | Johnson", "Cam Newton | Newton", "Demaryius Thomas | Thomas", "Dez Bryant | Bryant", "Drew Brees | Brees", "Jason Witten | Witten", "JJ Watt | Watt", "Le'veon Bell | Bell", "Marshawn Lynch | Lynch", "Odell Beckham Jr. | Beckham", "Peyton Manning | Manning", "Richard Sherman | Sherman", "Rob Gronkowski | Gronkowski", "Russell Wilson | Wilson", "Tom Brady | Brady", "Tony Romo | Romo", "Von Miller | Miller"];
+
+// d.
+var time_limit = 180; // in seconds
+
+</script>
+
+</head>
+
+
+<!-- e. -->
+<body onload="setup()">
+
+<header>
+    <h1>Sporclone</h1>
+</header>
+
+<div class="frame">
+
+    <section>
+
+        <aside>
+            <h3>More Games</h3>
+            <ul>
+            <!-- f. -->
+            <li><a href="college_teams.html">Top Ten College Football</a></li>
+            <li><a href="championship_teams.html">NCAA Basketball Champions</a></li>
+            </ul>
+        </aside>
+
+        <!-- g. -->
+        <img class="icon" src="img/nfl_icon.png" alt="quiz logo">
+
+        <!-- h. -->
+        <h2>Name the 20 NFL players based on the picture.</h2>
+
+    </section>
+
+    <section>
+
+        <div class="column">
+            <!-- i. -->
+            <input onclick="start()" id="start" type="button" value="PLAY GAME">
+        </div>
+
+        <div class="column">
+            <!-- j. -->
+            <h3>Enter the NFL players last name or first and last:</h3>
+
+            <!-- k.  -->
+            <input onkeyup="check()" id="guess" type="text">
+        </div>
+
+        <div class="column">
+            <h3>Score</h3>
+            <span id="score"></span>
+        </div>
+
+        <div class="column">
+            <h3>Time</h3>
+            <span id="time"></span>
+        </div>
+
+    </section>
+
+    <section>
+
+        <!-- l. -->
+        <table>
+            
+        <tr></tr>
+            
+        <tr>
+        <td><img src="img/aaron_rodgers.png" alt="Aaron Rodgers"><br><span id="answer0"></span></td>
+        <td><img src="img/adrian_peterson.png" alt="Aaron Rodgers"><br><span id="answer1"></span></td>
+        <td><img src="img/andrew_luck.png" alt="Aaron Rodgers"><br><span id="answer2"></span></td>
+        <td><img src="img/calvin_johnson.png" alt="Aaron Rodgers"><br><span id="answer3"></span></td>
+        </tr>
+        <tr>
+        <td><img src="img/cam_newton.png" alt="Aaron Rodgers"><br><span id="answer4"></span></td>
+        <td><img src="img/demaryius_thomas.png" alt="Aaron Rodgers"><br><span id="answer5"></span></td>
+        <td><img src="img/dez_bryant.png" alt="Aaron Rodgers"><br><span id="answer6"></span></td>
+        <td><img src="img/drew_brees.png" alt="Aaron Rodgers"><br><span id="answer7"></span></td>
+        </tr>
+        <tr>
+        <td><img src="img/jason_witten.png" alt="Aaron Rodgers"><br><span id="answer8"></span></td>
+        <td><img src="img/jj_watt.png" alt="Aaron Rodgers"><br><span id="answer9"></span></td>
+        <td><img src="img/leveon_bell.png" alt="Aaron Rodgers"><br><span id="answer10"></span></td>
+        <td><img src="img/marshawn_lynch.png" alt="Aaron Rodgers"><br><span id="answer11"></span></td>
+        </tr>
+        <tr>
+        <td><img src="img/odell_beckham.png" alt="Aaron Rodgers"><br><span id="answer12"></span></td>
+        <td><img src="img/peyton_manning.png" alt="Aaron Rodgers"><br><span id="answer13"></span></td>
+        <td><img src="img/richard_sherman.png" alt="Aaron Rodgers"><br><span id="answer14"></span></td>
+        <td><img src="img/rob_gronkowski.png" alt="Aaron Rodgers"><br><span id="answer15"></span></td>
+        </tr>
+        <tr>
+        <td><img src="img/russell_wilson.png" alt="Aaron Rodgers"><br><span id="answer16"></span></td>
+        <td><img src="img/tom_brady.png" alt="Aaron Rodgers"><br><span id="answer17"></span></td>
+        <td><img src="img/tony_romo.png" alt="Aaron Rodgers"><br><span id="answer18"></span></td>
+        <td><img src="img/von_miller.png" alt="Aaron Rodgers"><br><span id="answer19"></span></td>
+        </tr>
+        </table>
+
+    </section>
+
+    <footer>
+
+        <!-- m. -->
+        <p>Quiz by Justin Hatley</p>
+
+    </footer>
+
+</div>
+
+<!-- n. -->
+<script src="js/sporclone.js"></script>
+
+</body>
+</html>
